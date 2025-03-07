@@ -39,6 +39,8 @@
 
 .about-grid {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   background-color: #808080;
   padding: 0 5vw;
   border-top: 5px solid black;
@@ -132,6 +134,25 @@
 
 /* Mobile Devices */
 @media only screen and (max-width: 600px) {
+  /* .about .about-head button {
+    display: none;
+  } */
+
+  .about .about-head h1 {
+    font-size: 2rem;
+  }
+
+  .about-desc .about-paraf p {
+    text-align: justify;
+  }
+
+  /* .break {
+    display: none;
+  } */
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
   /* .about .about-head button {
     display: none;
   } */
