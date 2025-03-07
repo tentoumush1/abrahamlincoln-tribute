@@ -1,0 +1,131 @@
+/** @format */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 5px solid black;
+  min-height: 100vh;
+}
+
+.hero-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  box-sizing: border-box;
+  width: 43%;
+  border-right: 5px solid black;
+}
+
+.hero-pic img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-desc {
+  width: 57%;
+  padding: clamp(2rem, 5vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-desc h1 {
+  font-size: clamp(2.5rem, 5vw, 5.75rem);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.hero-desc .year {
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin-bottom: clamp(1rem, 3vw, 2.5rem);
+}
+
+.hero-desc .hero-quotes {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 600;
+  font-style: italic;
+  color: #808080;
+  margin-bottom: clamp(1rem, 3vw, 2.5rem);
+}
+
+.hero-desc .cta {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  background-color: #808080;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+  max-width: 200px;
+  text-align: center;
+}
+
+.hero-desc .cta:hover {
+  background-color: #6a6a6a;
+  transform: translateY(-2px);
+}
+
+.hero-desc .cta a {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Media Queries with a mobile-first approach */
+@media only screen and (max-width: 992px) {
+  .hero-pic {
+    width: 50%;
+  }
+
+  .hero-desc {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-pic {
+    width: 100%;
+    min-height: 40vh;
+    border-right: none;
+    border-bottom: 5px solid black;
+    padding: 1.5rem;
+  }
+
+  .hero-desc {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .hero-desc .cta {
+    width: 150px;
+    max-width: 100%;
+  }
+
+  .hero-desc .break {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-pic {
+    min-height: 30vh;
+  }
+
+  .hero-desc h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-desc .cta {
+    width: 150px;
+    text-align: center;
+  }
+}

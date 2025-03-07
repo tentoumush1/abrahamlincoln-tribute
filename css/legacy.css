@@ -1,0 +1,136 @@
+/** @format */
+
+.legacy {
+  display: flex;
+  /* padding: 10vh 20vw; */
+  border-bottom: 5px solid black;
+}
+
+.legacy-column {
+  display: flex;
+  justify-content: space-around;
+  padding: 10vh 0;
+  width: 50%;
+  border-right: 5px solid black;
+}
+
+.legacy-info {
+  width: 200px;
+  height: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.legacy-info img {
+  width: 100%;
+  height: 229px;
+  filter: saturate(0);
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.legacy-info p {
+  font-weight: 700;
+  text-align: center;
+  margin: 0 5px 10px 5px;
+}
+
+.legacy-head {
+  width: 50%;
+  background-color: #808080;
+  padding: 10vh 5vw 0 0;
+}
+
+.legacy-head h1 {
+  font-size: 5rem;
+  text-align: right;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .legacy {
+    flex-direction: column-reverse;
+    border-bottom: 0;
+  }
+
+  .legacy-head {
+    width: 100%;
+    padding: 10vh 5vw 10vh 5vw;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+
+  .legacy-head h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .legacy-column {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-right: 0;
+  }
+
+  .legacy-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .legacy {
+    flex-direction: column-reverse;
+    border-bottom: 0;
+  }
+
+  .legacy-head {
+    width: 100%;
+    padding: 10vh 5vw;
+    border-bottom: 5px solid black;
+  }
+
+  .legacy-head h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .legacy-column {
+    border-right: 0;
+    width: 100%;
+    border-right: 0;
+  }
+
+  .break {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .legacy {
+    flex-direction: column-reverse;
+    border-bottom: 0;
+  }
+
+  .legacy-head {
+    width: 100%;
+    padding: 10vh 5vw;
+    border-bottom: 5px solid black;
+  }
+
+  .legacy-head h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .legacy-column {
+    border-right: 0;
+    width: 100%;
+    border-right: 0;
+  }
+
+  .break {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+/** @format */
+
+.quotes {
+  min-height: 50vh;
+  display: flex;
+  border-bottom: 5px solid black;
+}
+
+.quote-head {
+  min-width: 50%;
+  background-color: #808080;
+  padding: 5vh 0 0 5vw;
+  border-right: 5px solid black;
+}
+
+.quote-head h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+.quote-list {
+  padding: 8vh 7vw;
+}
+
+.quote-list p {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 20px;
+  opacity: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .quotes {
+    flex-direction: column;
+    border-bottom: 0;
+  }
+
+  .quote-head {
+    min-width: 100%;
+    border-right: 0;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 5vh 15vw;
+  }
+
+  .quote-head h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .quote-list {
+    padding: 8vh 15vw;
+  }
+
+  .quote-list p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .quotes {
+    border-top: 5px solid black;
+  }
+}

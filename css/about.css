@@ -1,0 +1,150 @@
+/** @format */
+
+.about {
+  width: 100%;
+}
+
+.about .about-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+
+.about .about-head h1 {
+  margin: 5vh 0 40px 0;
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.about .about-head button {
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 5vh 0 40px 0;
+}
+
+.about .about-head a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-weight: 700;
+  opacity: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.about .about-head a:hover {
+  opacity: 100%;
+}
+
+.about-grid {
+  display: flex;
+  background-color: #808080;
+  padding: 0 5vw;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  box-sizing: border-box;
+}
+
+.about-desc {
+  flex: 1;
+  border-right: 5px solid black;
+  padding: 20px 20px 20px 0;
+  margin-right: 30px;
+}
+
+.about-desc:last-child {
+  border-right: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.about-desc .about-title h2 {
+  font-size: clamp(1.3rem, 2vw, 2.125rem);
+  color: white;
+  margin-bottom: 12px;
+}
+
+.about-desc .about-paraf p {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  color: white;
+  margin-bottom: clamp(40px, 10vh, 145px);
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .about-desc {
+    padding-bottom: 40px;
+  }
+}
+
+/* Small Desktop and Tablets */
+@media only screen and (max-width: 1024px) {
+  .about-desc .about-paraf p {
+    margin-bottom: 60px;
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    border-top: 2px solid black;
+    padding: 0 5vw 5vh 5vw;
+  }
+
+  .about .about-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about .about-head h1 {
+    margin: 5vh 0 20px 0;
+    width: 50%;
+  }
+
+  .about .about-head button {
+    align-self: flex-end;
+    margin: 0 0 20px 0;
+  }
+
+  .about-desc {
+    width: 100%;
+    border-right: none;
+    margin-right: 0;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .about-desc:last-child {
+    border-bottom: none;
+  }
+
+  .about-desc .about-paraf p {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+  /* .about .about-head button {
+    display: none;
+  } */
+
+  .about .about-head h1 {
+    font-size: 2rem;
+  }
+
+  .about-desc .about-paraf p {
+    text-align: justify;
+  }
+
+  /* .break {
+    display: none;
+  } */
+}
